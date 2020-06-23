@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>
+            GetPet Shopping Exit Page
+        </title>
+        <link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.css">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/GETPET.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+        <style>
+            #navbar{
+                height: 100px;
+            }
+            #product_name{
+                border: 3px solid #e8b923;
+                background-color: #010203;
+                border-radius: 10px;
+                width: 60%;
+                height: 150px;
+                font-size: 35px;
+                padding: 5px;
+                color: #d5d5d7;
+            }
+            #product_image{
+                width: 60%;
+                height: 600px;
+                border: 1px solid brown;
+                border-radius: 10px;
+                padding-left: 5px;
+            }
+            #pdt_desc{
+                width: 35%;
+                float: right;
+                border: 2px solid #804000;
+                border-radius: 8px;
+                height: 710px;
+                margin-top: -600px;
+                margin-right: 10px;
+                background-color: #ffdd99;
+            }
+            
+		        </style>
+    </head>
+    <body>
+        <div id="navbar">
+             <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+          <div class="container"><img src="logo.png" height="75px" width="75px" style="margin-left: -50px">
+            <a class="navbar-brand" href="index.html" style="color: #ffe066;font-size: 40px;">Get<font style="color: #86592d ">Pet</font></a>
+           
+              
+    
+            <div class="collapse navbar-collapse" id="ftco-nav" style="background-color: black;border-radius: 7px;">
+              <ul class="navbar-nav ml-auto" style="height: 70px;">
+                  <center><div style="font-size: 45px;color: #ffe066;padding-right: 200px;padding-top: 0px">Buy Your Pet</div></center>
+                <li class="nav-item active"><a href="home.html" class="nav-link" style="color: #ffe066;font-size: 15px; " onfocus="activel()">Home</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+        <div id="product_name">
+            <b style="margin-left: 10px">Category :</b>Wolf/Puppy<br>
+            
+            <b style="margin-left: 10px;">Pet Name :</b>Siberian Husky
+        </div>
+        <br>
+        <div id="product_image">
+            <center><img src="huskpup.jpg" height="599px" width = "680px"></center>
+        </div>
+        <div id="pdt_desc">
+            <center><h2 style="color: #804000s">Pet Description</h2></center><hr style="border: 1px solid #804000;width: 30%">
+            <center>
+            <p style="font-size: 25px">This pet is a Siberian Husky puppy.All the way from Alaska and 2 and a half feet standing height. <br>
+                Weight is 15 kilograms<br>
+                This is the perfect home and family friendly pet wolf.
+                
+            </p>
+                </center>
+            <hr style="border: 1px solid #804000;width: 80%">
+            <h2>Color : Black Silver</h2>
+            <h2> Price : Rs.9,600.00</h2> 
+            <h2>Breed : Siberian Husky</h2> 
+            <h2>Age : 2 months</h2><br>
+            <center><button style="border: 3px solid #e8b923;
+                background-color: #010203;color: #d5d5d7;width: 120px;height: 60px;border-radius: 8px;font-size: 20px" onclick="buy()">Buy Now</button></center>
+            
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script> 
+        function buy(){
+            
+            swal("Congrats on your purchase!", "The Seller will contact you soon .", "success");
+        };
+        
+    </script>
+    </body>
+</html>

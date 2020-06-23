@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+
+
+
+<?php
+
+session_start();
+
+if($_SESSION["username"]== ""){
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "webtech";
+
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    if (!$conn)
+        die("Connection failed: " . mysqli_connect_error());
+    $uname = $_POST["uname"]; 
+    $pwd = $_POST["pwd"]; 
+    $sql = "SELECT * FROM users WHERE username='$uname'";
+    if ($result=mysqli_query($conn,$sql)){
+        if($row=mysqli_fetch_row($result)){ 
+            if($row[2] == $pwd){
+                echo "<script type='text/javascript'> alert('signed in!') ;
+                $('#uname').val() = '' ; $('#pwd').val() = '';</script>"; 
+                $_SESSION["username"] = $uname;
+            }   
+            else{
+                echo "<script type='text/javascript'> alert('noooo in!') ; 
+                $('#uname').val() = '' ; $('#pwd').val() = '';
+                document.location='signin.html';
+                </script>";
+            }
+    }
+    else
+        header("Location: signup.html");  
+    }
+    mysqli_close($conn);
+}
+else{
+    echo "you're already signed in, " . $_SESSION["username"] . " -__- <br>";
+}
+?>
+<html>
+    <head>
+         <link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.css">
+        
+        <style>
+            #heading{
+                margin-left: 305px;
+                color: #D4AF37;
+                width: 350px;
+                border:1px solid #86592d;
+                border-radius: 20px;
+                background-color:  black;
+                margin-top: 20px;
+            }
+            #gap{
+            
+                min-height: 200px;
+            }
+            #login{
+                border: 1px solid #86592d;
+                background-color:   #ffe066
+                ;
+                border-radius: 10px;
+                min-height: 300px;
+            }
+            body{
+                background-image: url("images/login.jpg");
+                color: #663300;
+                background-repeat:no-repeat;
+                background-size: cover;
+                
+            }
+            #logo{
+                margin-left: 370px;
+                
+            }
+            #formreg{
+                
+                border: 1px solid black;
+                background-color: cornsilk;
+            }
+            .form-popup{
+                display: none;
+                border: 1px solid gold;
+                border-radius: 10px;
+                background-color: beige;
+                
+            }
+            .irritate{
+                margin-right: auto;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12" id="gap">
+                    <div class="col-lg-4"></div>
+                    <img src="images/getpet.png" height="190px" width="190px" id="logo" class="col-lg-4"></div>
+            </div>
+            <div class="row">
+             
+                <div class="col col-lg-4 offset-lg-4" id="login">
+                    <p class="h1 text-center">Login</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="Username">Username</label>
+                            <input type="email" placeholder="Enter username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter password">
+                            <br>
+                            <center>
+                            
+                                <button class=" btn btn-primary tex-center">Log In</button>
+                            <button class="btn btn-danger text-center">Cancel</button><br><br>
+                            <div id="register" style="color: blue;font-size: 20px" onclick="openForm()"><u>Sign Up</u></div>
+                             </center> 
+                          
+                        </div>
+                    </form>
+                    
+                </div><br><br>
+                <div class="row my-auto" id="irritate">
+                    <div class="col-lg-4" ></div>
+                <div id="heading" class="col-lg=4"><center><h2>GetPet</h2><font size="3px" face="Bradley Hand">Your one stop destination for all Pet needs</font></center></div>
+                    </div>
+                    <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+            </div>
+        </div>
+           <div class="form-popup" id="myForm">
+           
+                    <form action="/action_page.php" id="regform">
+                      <div class="container">
+                        <h1>Register</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+                        <label for="user_name"><b>First Name</b></label>
+                          <input type="text" placeholder="Enter your first name" name="firstname" required>
+                          <label for="lastname"><b>Last Name</b></label>
+                          <input type="text" placeholder="Enter your last name" name="lastname" required>
+                          <label for="mobile"><b>Mobile Number</b></label>
+                          <input type="tel" name="mnumber" placeholder="Enter your mobile number" required><br>
+                          
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <center>
+                        <button type="submit" class="registerbtn" style="border-radius: 5px;background-color: black;color: gold">Register</button>
+                        </center>
+                          <div class="row"></div>
+                      </div>
+
+                      
+                    </form>
+                </div>
+
+                
+         
+        
+
+        <!--<script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        </script>-->
+        <script src="jquery-2.1.3.js"></script>
+        <script src="jquery-ui.js">
+        </script>
+        <script>
+            $(function(){
+               $("#register").click(function(){
+                  $("#myForm").dialog(); 
+               }); 
+            });
+        </script>
+    </body>
+</html>

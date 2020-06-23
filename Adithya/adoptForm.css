@@ -1,0 +1,261 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.image {
+
+    background-image: url("img/Adoption/adopt-3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+.txt-center {
+    text-align: center;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+a,
+select,
+button,
+textarea,
+label {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+.wrap {
+    padding: 2.3em;
+    width: 37%;
+    margin: 2em 15em;
+    float: right;
+    background: rgba(25, 24, 24, 0.47);
+    -webkit-box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+h1.head {
+    padding-top: 1em;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 4px;
+    line-height: 1.5;
+}
+
+.layouts_main h2 {
+    font-size: 2em;
+    color: #fdd103;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+form.form {
+    padding: 1em 0;
+}
+
+.layouts_main.p,
+.layouts_main.wrap h6 {
+    color: #ffe066;
+    margin: 0 0 1.5em 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.layouts_main.wrap h6 {
+    text-align: left;
+}
+
+.form input[type=text] {
+    float: left;
+}
+
+.form input[type=text] {
+    padding: 0.9em 1em;
+    color: #ffe066;
+    width: 88%;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffe066;
+    background: rgba(236, 236, 236, 0.37);
+    font-family: 'Dosis', sans-serif;
+}
+
+.form input[type="email"] {
+    width: 94%;
+    padding: 0.9em 1em;
+    margin: 0em 0em 1em 0;
+    color: #ffe066;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffe066;
+    background: rgba(236, 236, 236, 0.37);
+    font-family: 'Dosis', sans-serif;
+}
+
+.form textarea {
+    font-size: 0.85em;
+    color: #ffe066;
+    padding: 0.8em 1em;
+    margin-bottom: 1em;
+    width: 94.5%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffe066;
+    background: rgba(236, 236, 236, 0.37);
+    resize: none;
+    height: 7em;
+    background: rgba(236, 236, 236, 0.37);
+}
+.textarea.l_summary {
+    min-height: 4em;
+    background: rgba(25, 5, 20, 0.48);
+    font-size: 0.85em;
+}
+
+.form input[type="submit"] {
+    width: 30%;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #f5ecf1;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.85em 0;
+    letter-spacing: 1px;
+    font-family: 'Dosis', sans-serif;
+    border-bottom: 1px solid #ffe066;
+    background: #000;
+}
+
+.form input[type="submit"]:hover {
+    color: #f7f7f7;
+    background: #fdd103;
+}
+
+
+
+.copyright p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #000;
+    padding-bottom: 2em;
+    line-height: 2;
+    position: absolute;
+    top: 900px;
+    left:500px
+}
+
+
+.icon1 label {
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #ffe066;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 1em;
+    display: inherit;
+}
+
+.icon1.ls-name1 {
+    float: left;
+    width: 47%;
+}
+.icon2 {
+    float: right;
+    width: 50%;
+}
+.icon3 label{
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #ffe066;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 1em;
+    display: inherit;
+}
+.clear {
+    clear: both;
+}
+

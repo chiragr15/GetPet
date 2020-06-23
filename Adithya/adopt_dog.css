@@ -1,0 +1,93 @@
+.row-padding:after,
+.row-padding:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-padding>.quarter {
+    padding: 0 8px
+}
+
+.padding-64 {
+    padding-top: 50px;
+}
+
+.theme-l1 {
+    color: #000;
+    background-color: black
+}
+
+.img {
+    height: 200px;
+
+}
+
+.one{
+    float: left;
+    width: 100%
+}
+.two{
+    float: right;
+    width:100%;
+}
+
+@media (min-width:601px) {
+
+    .col.m3,
+    .quarter {
+        width: 47.999%;
+    }
+}
+
+
+
+.white {
+    color: #000;
+    background-color: #fff;
+}
+
+.container:after,
+.container:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.container,
+.panel {
+
+    padding: 0.01em 16px;
+    background: #ffe066;
+}
+.center {
+    text-align: center; 
+}
+.right{
+    float:right;
+}
+
+.button {
+    width: 30%;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #f5ecf1;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.85em 0;
+    letter-spacing: 1px;
+    font-family: 'Dosis', sans-serif;
+    border-bottom: 1px solid #fff;
+    background: #07c7ff;
+
+}
+
+.button:hover {
+    color: #f7f7f7;
+    background: #000;
+}
+.padding{
+    padding-bottom: 10px;
+}

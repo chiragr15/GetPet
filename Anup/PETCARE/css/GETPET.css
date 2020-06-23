@@ -1,0 +1,196 @@
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	transition: all 0.5s;
+}
+a {
+	text-decoration: none!important;
+}
+
+.space{
+	width:100%;
+	height:50px;
+}
+
+.tm-welcome-section {
+	
+	width: 50%;
+	
+}
+.tm-welcome-section p,h2{
+	left:50%
+}
+
+
+
+/* Featured Style */
+.featured-items {
+	margin-bottom: 70px;
+}
+.featured-item {
+	border-radius: 5px;
+	border: 1px solid #eee;
+	padding: 20px;
+	transition: all 0.5s;
+}
+.featured-item:hover {
+	opacity: 0.9;
+}
+.featured-item img {
+	width: 100%;
+}
+.featured-item h4 {
+	font-size: 17px;
+	font-weight: 700;
+	color: #1e1e1e;
+	margin-top: 15px;
+	transition: all 0.5s;
+}
+.featured-item:hover h4 {
+	color:black;
+}
+.featured-item h6 {
+	color:red;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+
+.featured-page {
+	margin-top: 130px;
+	margin-bottom: 40px;
+}
+.featured-page .section-heading {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.featured .featured-item {
+	margin-bottom: 30px;
+	text-decoration: none;
+}
+.featured .featured-item h4 {
+	transition: all 0.5s;
+}
+.featured .featured-item:hover h4 {
+	color: #3a8bcd;
+}
+input[type="radio"]{
+	font-size: 40px;
+}
+
+
+
+.portfolio {
+  padding-bottom: 0px;
+  
+}
+
+
+
+.portfolio .btn-group .btn {
+  border-radius: 0px !important;
+  padding-left: 100px;
+  font-weight:500;
+  font-size: 20px;
+  background-color:black;
+  color: #ffe066;
+}
+
+.portfolio .btn-group .btn:hover {
+  color:white;
+}
+
+
+.portfolio .btn.active {
+  color:darkgray;
+}
+.portfolio .btn #pets{
+	color: darkgreen;
+}
+
+.subhead{
+	margin: 85px;
+	color:#ffe066;
+}
+
+
+#footer {
+	background: #15161D;
+	color: #B9BABC;
+  }
+  
+  #bottom-footer {
+	background: #1E1F29;
+  }
+  
+  .footer {
+	margin: 30px 0px;
+  }
+  
+  .footer .footer-title {
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 0px 0px 30px;
+  }
+  
+  .footer-links li+li {
+	margin-top: 15px;
+  }
+  
+  .footer-links li a {
+	color: #B9BABC;
+  }
+  
+  .footer-links li i {
+	margin-right: 15px;
+	color: #D10024;
+	width: 14px;
+	text-align: center;
+  }
+  
+  .footer-links li a:hover {
+	color: #D10024;
+  }
+  
+  .copyright {
+	margin-top: 30px;
+	display: block;
+	font-size: 12px;
+  }
+  
+  .footer-payments li {
+	display: inline-block;
+	margin-right: 5px;
+  }
+  
+  .footer-payments li a {
+	color: #15161D;
+	font-size: 36px;
+	display: block;
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

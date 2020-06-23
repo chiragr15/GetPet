@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/GETPET.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="adoptForm.css" rel="stylesheet" type="text/css" />
+    <title>adoptForm</title>
+</head>
+
+<body class="image">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+          <div class="container"><img src="../logo.png" height="75px" width="75px" style="margin-left: -50px">
+            <a class="navbar-brand" href="#" style="color: #ffe066;font-size: 40px;">Get<font style="color: #86592d ">Pet</font></a>
+           
+              
+    
+            <div class="collapse navbar-collapse" id="ftco-nav" style="background-color: black;border-radius: 7px;">
+              <ul class="navbar-nav ml-auto" style="height: 70px;">
+                  <center><div style="font-size: 45px;color: #ffe066;padding-right: 200px;padding-top: 0px">Pet Adoption Form</div></center>
+                <li class="nav-item active"><a href="../home.html" class="nav-link" style="color: #ffe066;font-size: 15px; " onfocus="activel()">Home</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+    
+    <div class="layouts_main wrap">
+        <h2>We Care</h2>
+        <form class="form">
+            <div class="icon1 ls-name1">
+                <label>First Name</label>
+                <input placeholder=" " name="first name" type="text" >
+            </div>
+            <div class="icon1 icon2">
+                <label>Last Name</label>
+                <input placeholder="" name="last name" type="text" >
+            </div>
+            <div class="clear"></div>
+            <br>
+            <div class="icon3">
+                <label>Email</label>
+                <input placeholder=" " name="Email" type="text" >
+            </div>
+            <div class="icon3">
+                <label>Phone Number</label>
+                <input placeholder=" " name="Phone" type="text" >
+            </div>
+            <div class="clear"></div>
+            <br>
+            <div class="icon3">
+                <h6>Address</h6>
+                <textarea class="l_summary" required=""></textarea>
+                <button  type ="button" onclick="adopt()" id="adoptbutton" style="height: 70px;width: 150px;font-size: 20px;background-color: black;border: 2px solid gold;color: white">Submit</button>
+            </div>
+
+        </form>
+
+
+    </div>
+    <div class="copyright text-center">
+            <p>© 2019 Pet Adoption Form. All rights reserved to pet center|</p>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script> 
+        function adopt(){
+            
+            swal("Way to go!", "The Adoption Center will contact you soon.", "success");
+        };
+        
+    </script>
+</body>
+
+</html>
